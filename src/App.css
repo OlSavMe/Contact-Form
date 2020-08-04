@@ -1,16 +1,3 @@
 .App {
   text-align: center;
 }
-
-.App section {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  justify-content: space-evenly;
-}
-
-.App section img {
-  display: flex;
-  margin: 2rem auto;
-  max-width: 50%;
-}
