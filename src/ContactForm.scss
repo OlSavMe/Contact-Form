@@ -23,6 +23,10 @@
   padding: 3%;
   margin: auto;
   position: relative;
+  @include phone {
+    width: 95%;
+  }
+
   .contact-form {
     color: white;
     display: flex;
@@ -112,6 +116,10 @@
 
         &:hover,
         &:active {
+          background: linear-gradient(#683a06, #fcff38);
+          box-shadow: 0px -1px -4px 2px #333;
+        }
+        &.done {
           background: linear-gradient(#06680b, #38ffbd);
           box-shadow: 0px -1px -4px 2px #333;
         }

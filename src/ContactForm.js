@@ -10,6 +10,11 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  const [buttonText, setButtonText] = useState("Submit");
+
+  const toggleButtonText = (e) => {
+    setButtonText("Done");
+  };
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -75,7 +80,12 @@ const ContactForm = () => {
             ></textarea>
           </label>
           <div>
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value={buttonText}
+              onClick={toggleButtonText}
+              className={buttonText === "Submit" ? "" : "done"}
+            />
           </div>
         </form>
       </div>
